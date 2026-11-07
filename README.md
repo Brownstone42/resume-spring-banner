@@ -27,3 +27,7 @@ npm run preview
 Browser checks cover four drag directions and return motion, touch input, nine grab positions, pointer-follow remaining disabled, click/keyboard activation, reduced motion, and mobile overflow.
 
 Motion tuning: gravity 400 and tether stiffness 50 preserve the resting length while slowing recoil. Radial damping 6 absorbs strap stretch; swing damping 0.65 lets lateral motion decay over several passes. Card rotation uses stiffness 32 and damping 10 for a softer follow-through.
+
+## Continuous deployment
+
+Pushes to GitHub branch `main` automatically trigger a Netlify production build (`npm run build`, output `dist`, Node.js 22). Netlify reads the private repository using a read-only deploy key; a GitHub push webhook starts the build.
