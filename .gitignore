@@ -1,0 +1,14 @@
+node_modules/
+dist/
+.openai/*.tar.gz
+preview-*.png
+verify.cjs
+verify-hit.cjs
+verify-free-drag.cjs
+verify-swing.cjs
+
+.openai/
+.netlify/
+.env
+.env.*
+!.env.example
